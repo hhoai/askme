@@ -1,0 +1,25 @@
+:root {
+  --primary-color: #a56eff;
+  --white: #fff;
+  --black: #000;
+  --text-color: #737373;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+button {
+  width: 100%;
+  border: none;
+  text-align: start;
+  background: transparent;
+}
