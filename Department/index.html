@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>AskMe</title>
   </head>
   <body>
@@ -37,17 +38,14 @@
         <div class="sidebar-content">
           <div class="overview">Overview</div>
           <div class="department">
-            <button
-              onclick="handleDepartmentClicked()"
-              class="department-title"
-            >
+            <div class="department-title">
               Departments
               <span class="material-symbols-outlined">arrow_drop_down</span>
-            </button>
-            <div class="department-content isDisplay">
-              <button class="item">Tuyển sinh</button>
-              <button class="item">Truyền thông</button>
-              <button class="item">Hợp tác đối ngoại</button>
+            </div>
+            <div class="department-content">
+              <button onclick="handleDepartmentClicked()" class="item clicked">Tuyển sinh</button>
+              <button onclick="handleDepartmentClicked()" class="item clicked">Truyền thông</button>
+              <button onclick="handleDepartmentClicked()" class="item clicked">Hợp tác đối ngoại</button>
               <div class="item">...</div>
               <div class="item">+ New</div>
             </div>
@@ -60,7 +58,10 @@
       </div>
       <div class="content">
         <div class="new-department">
-          <button>+ Create new</button>
+          <div class="head">
+            <span></span>
+            <a href="../NewDepartment/" class="btn-1">+ Create new</a>
+          </div>
           <div class="new-department-content">
             <div class="new-department-title">
               Bảng thống kê Department của Trường Đại học Phenikaa
@@ -115,10 +116,71 @@
                 <td></td>
               </tr>
             </table>
-            <button>+ Create new Department</button>
+            <button href="../NewDepartment/" class="btn-2">+ Create new Department</button>
           </div>
         </div>
-        <!-- <div class="new-file"></div> -->
+        <div class="new-file isDisplay">
+          <div class="head">
+            <button class="back" onclick="handleBackBtn()"><span class="material-symbols-outlined">arrow_back</span></button>
+            <a href="../NewFile/" class="btn-1">+ Upload new file</a>
+          </div>
+          <div class="new-department-content">
+            <div class="new-department-title">
+              Bảng thống kê số lượng file đã up
+            </div>
+            <table>
+              <tr>
+                <td class="bg-gray"></td>
+                <td class="bg-gray">A</td>
+                <td class="bg-gray">B</td>
+                <td class="bg-gray">C</td>
+                <td class="bg-gray">D</td>
+                <td class="bg-gray">E</td>
+              </tr>
+              <tr>
+                <td class="bg-gray">1</td>
+                <th>File name</th>
+                <th>Create By</th>
+                <th>Update Date</th>
+                <th>Expiration Date</th>
+                <th>Notes</th>
+              </tr>
+              <tr>
+                <td class="bg-gray">2</td>
+                <td>Quy định tuyển sinh số 288</td>
+                <td>Nguyễn C (Admin)</td>
+                <td>22/02/2023</td>
+                <td>22/02/2027</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="bg-gray">3</td>
+                <td>Quy chế tuyển sinh số 211</td>
+                <td>Nguyễn D (Admin)</td>
+                <td>22/07/2023</td>
+                <td>22/07/2028</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="bg-gray">4</td>
+                <td>Quy chế tuyển sinh số 25</td>
+                <td>Nguyễn G (Admin)</td>
+                <td>22/09/2023</td>
+                <td>22/09/2027</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="bg-gray">5</td>
+                <td>Quy chế tuyển sinh số 32</td>
+                <td>Nguyễn H (Admin)</td>
+                <td>22/11/2023</td>
+                <td>22/11/2028</td>
+                <td></td>
+              </tr>
+            </table>
+            <button href="../NewFile/" class="btn-2">+ Create new file</button>
+          </div>
+        </div>
       </div>
     </div>
   </body>

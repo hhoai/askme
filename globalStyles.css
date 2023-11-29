@@ -22,4 +22,5 @@ button {
   border: none;
   text-align: start;
   background: transparent;
+  cursor: pointer;
 }
